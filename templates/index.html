@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="container">
+    <h1>ZoomOut</h1>
+    <h2>By Yon Liud and & JustPelmen</h2>
+    <form method="POST">
+        {% if isActive %}
+        <h2 class="blink_me" style="color: red;">ACTIVE</h2>
+        {% endif %}
+        <label for="endtime">Time Until Zoom Ending:</label>
+        <input id="endtime" type="text" placeholder="HHMM   --Example: 1450" name="endtime" />
+        <input class="button-primary" type="submit" value="Submit" style="align-items: center;" />
+        
+    </form>
+    <button onclick="window.location='/close'" class="button button-outline" style="background-color: transparent; border-color: red; color: red">Close App</button>
+    <table>
+        <tbody>
+          <tr>
+            <td>End Time</td>
+            <td>{{endtime}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+{% endblock %}
