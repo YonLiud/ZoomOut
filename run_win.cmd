@@ -11,7 +11,8 @@ where py >nul 2>&1 && goto boot || goto exit
     Exit /B 5
 :boot
     echo [102;90mPython is Installed![0m
-    echo [93mInstalling Flask...[0m
+    echo [93mInstalling Lib...[0m
+    pip3 install win10toast
     pip3 install flask >NUL
     echo [92mDone![0m
     echo [93mStarting Browser...[0m

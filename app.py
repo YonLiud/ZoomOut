@@ -3,6 +3,7 @@ import time
 import os
 import converter
 import threading
+from win10toast import ToastNotifier
 
 app=Flask(__name__)
 stop = False
@@ -16,6 +17,9 @@ def timer(endtime):
             timeformat = '{:02d}:{:02d}'.format(mins, secs)
             print(timeformat, end='\r')
             time.sleep(1)
+            if(endtime == 30):
+                toast = ToastNotifier()
+                toast.show_toast("ZoomOut","Leaving Zoom in 30 Seconds",duration=10)
             endtime -= 1
         else:
             break
