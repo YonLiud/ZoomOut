@@ -15,16 +15,6 @@
     <br> 
 </p>
 
-## 🎈 Usage
-
-<b>Windows:</b>
-
-- Run the file ```run_win.cmd```
-
-<b>Linux:</b>
-
-- Coming Soon...
-
 ## 🚀 Requirements
 
 - [Python 3.9](https://www.python.org/downloads/)
@@ -38,7 +28,7 @@
 - [@YonLiud](https://github.com/YonLiud) - User Interface & Accessibility development
 - [@JustPelmen](https://github.com/JustPelmen) - Idea Development & Timer Mechanism development
 
-## 🎉 Acknowledgements
+## 🎉 Acknowledgements7
 
 - Noy Ravin - Initiator of the idea
 - Benny Yufa - Tester
