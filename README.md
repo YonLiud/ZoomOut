@@ -17,18 +17,21 @@
 
 ## 🎈 Usage
 
-Add notes about how to use the system.
+<b>Windows:</b>
 
-## 🚀 Deployment
+- Run the file ```run_win.cmd```
 
-Add additional notes about how to deploy this on a live system.
+<b>Linux:</b>
+
+- Coming Soon...
+
+## 🚀 Requirements
+
+- [Python 3.9](https://www.python.org/downloads/)
 
 ## ⛏️ Built Using
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- Flask
 
 ## ✍️ Authors
 
