@@ -32,7 +32,7 @@ where py >nul 2>&1 && goto boot || goto exit
         echo [92mvenv already exists[0m
     ) else (
         echo [93mCreating virtual enviroment[0m
-        python -m virtualenv venv
+        py -m virtualenv venv
     )
     echo [104;97mStarting venv[0m [93mPlease Wait...[0m
     CALL venv\Scripts\activate.bat
