@@ -18,6 +18,9 @@ where py >nul 2>&1 && goto boot || goto exit
     start http://localhost:5000
     echo [104;97mStarting ZoomOut![0m
     py app.py
+    echo [93mRemoving venv[0m
+    del venv/
+    Rmdir /S /Q venv
     echo [104;97mApp has been closed[0m
     exit
 
@@ -31,6 +34,6 @@ where py >nul 2>&1 && goto boot || goto exit
         echo [93mCreating virtual enviroment[0m
         python -m virtualenv venv
     )
-    echo [104;97mStarting venv[0m
+    echo [104;97mStarting venv[0m [93mPlease Wait...[0m
     CALL venv\Scripts\activate.bat
     goto startup
