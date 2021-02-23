@@ -17,6 +17,9 @@ def timer(endtime):
             timeformat = '{:02d}:{:02d}'.format(mins, secs)
             print(timeformat, end='\r')
             time.sleep(1)
+            if(endtime == 300):
+                toast = ToastNotifier()
+                toast.show_toast("ZoomOut","Leaving Zoom in 5 Minutes",duration=10)
             if(endtime == 30):
                 toast = ToastNotifier()
                 toast.show_toast("ZoomOut","Leaving Zoom in 30 Seconds",duration=10)
@@ -46,7 +49,7 @@ def close():
     func = request.environ.get('werkzeug.server.shutdown')
     func()
     os.system("echo [91mClosing App[0m")
-    return "<h1>ZoomOut has been closed</h1>"
+    return render_template("closed.html")
 
 
 
